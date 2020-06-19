@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
   :root {
     --limegreen: hsl(163, 72%, 41%);
     --brightred: hsl(356, 69%, 56%);
@@ -17,6 +16,13 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  *,
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
   html {
 	//100% = 16px
 	font-size: 62.5%; // 1rem = 10px
@@ -26,16 +32,13 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     background: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.textPrimary};
-    padding: 0;
-    margin: 0;
+ 
     font-family: 'Inter', sans-serif;
     text-rendering: optimizeSpeed;
   }
 
   ul,
   ol {
-    padding: 0;
-    margin: 0;
     list-style: none;
   }
 
@@ -44,9 +47,9 @@ export const GlobalStyles = createGlobalStyle`
     display: block;
   }
 
-  svg {
+  ${'' /* svg {
     fill: currentColor;
-  }
+  } */}
 
   a {
     text-decoration: none;
