@@ -3,15 +3,20 @@ import styled from 'styled-components';
 import SocialIcon from '../SocialIcon/SocialIcon';
 import CountIcon from '../CountIcon/CountIcon';
 
+const BorderWrapper = styled.div`
+	background: ${({ color }) => `var(--${color})`};
+	max-width: 40rem;
+	border-radius: 4px;
+	padding-top: 0.4rem;
+	margin: 0 auto;
+`;
+
 const StyledCard = styled.div`
 	background: ${({ theme }) => theme.cardBackground};
-	border-top: 5px solid var(--facebook);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 2.8rem;
-	border-radius: 4px;
-	max-width: 40rem;
 	margin: 0 auto;
 	justify-content: center;
 `;
@@ -61,20 +66,22 @@ const SubTitle = styled.h3`
 	margin-top: 0.5rem;
 `;
 
-const FollowCard = ({ metric, platform, count, change, trend }) => {
+const FollowCard = ({ username, metric, platform, count, change, trend }) => {
 	return (
-		<StyledCard>
-			<Row>
-				<SocialIcon platform='facebook' />
-				<UserHandle>@nathanf</UserHandle>
-			</Row>
-			<FollowCount>1987</FollowCount>
-			<SubTitle>Followers</SubTitle>
-			<ChangeContainer>
-				<CountIcon />
-				<ChangeText>12 Today</ChangeText>
-			</ChangeContainer>
-		</StyledCard>
+		<BorderWrapper color={platform}>
+			<StyledCard>
+				<Row>
+					<SocialIcon platform={platform} />
+					<UserHandle>{username}</UserHandle>
+				</Row>
+				<FollowCount>{count}</FollowCount>
+				<SubTitle>{metric}</SubTitle>
+				<ChangeContainer>
+					<CountIcon direction={trend} />
+					<ChangeText color={trend}>{change} Today</ChangeText>
+				</ChangeContainer>
+			</StyledCard>
+		</BorderWrapper>
 	);
 };
 

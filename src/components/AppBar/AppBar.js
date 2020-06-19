@@ -9,6 +9,12 @@ const StyledContainer = styled.div`
 	border-bottom-right-radius: 2.5rem;
 `;
 
+const FlexContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+`;
+
+const Column = styled.div``;
 const Heading = styled.h1`
 	font-size: 2.2rem;
 	margin-bottom: 1rem;
@@ -29,10 +35,16 @@ const StyledLine = styled.hr`
 const AppBar = ({ theme, toggleTheme }) => {
 	return (
 		<StyledContainer>
-			<Heading>Social Media Dashboard</Heading>
-			<Subheading>Total Followers: 23,004</Subheading>
-			<StyledLine />
-			<ThemeToggler theme={theme} toggleTheme={toggleTheme} />
+			<FlexContainer>
+				<Column>
+					<Heading>Social Media Dashboard</Heading>
+					<Subheading>Total Followers: 23,004</Subheading>
+					<StyledLine />
+				</Column>
+				<Column>
+					<ThemeToggler theme={theme} toggleTheme={toggleTheme} />
+				</Column>
+			</FlexContainer>
 		</StyledContainer>
 	);
 };

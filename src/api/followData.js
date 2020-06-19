@@ -1,0 +1,38 @@
+export default [
+	{
+		username: '@nathanf',
+		metric: 'Followers',
+		platform: 'facebook',
+		count: '1987',
+		change: 12,
+		trend: 'up',
+		id: 0,
+	},
+	{
+		username: '@nathanf',
+		metric: 'Followers',
+		platform: 'twitter',
+		count: '1044',
+		change: 99,
+		trend: 'up',
+		id: 1,
+	},
+	{
+		username: '@realnathanf',
+		metric: 'Followers',
+		platform: 'instagram',
+		count: '11k',
+		change: 1099,
+		trend: 'up',
+		id: 2,
+	},
+	{
+		username: 'Nathan F.',
+		metric: 'Subscribers',
+		platform: 'youtube',
+		count: '8239',
+		change: 144,
+		trend: 'down',
+		id: 3,
+	},
+];
