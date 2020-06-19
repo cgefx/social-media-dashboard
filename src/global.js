@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     --twitter: hsl(203, 89%, 53%);
     --instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
     --youtube: hsl(348, 97%, 39%);
+    --auto-grid-min-size: 27rem;
   }
 
   *,

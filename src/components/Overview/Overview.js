@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import OverviewCard from '../OverviewCard/OverviewCard';
 import overviewData from '../../api/overviewData';
 
-const StyledContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	/* align-items: center;
-	justify-items: center; */
+const StyledGrid = styled.ul`
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(var(--auto-grid-min-size), 1fr)
+	);
+	grid-gap: 1.6rem;
 `;
 
 const Heading = styled.h2`
@@ -30,10 +32,10 @@ const overviewList = overviewData.map((item) => (
 
 function Overview() {
 	return (
-		<StyledContainer>
+		<>
 			<Heading>Overview - Today</Heading>
-			<ul>{overviewList}</ul>
-		</StyledContainer>
+			<StyledGrid>{overviewList}</StyledGrid>
+		</>
 	);
 }
 

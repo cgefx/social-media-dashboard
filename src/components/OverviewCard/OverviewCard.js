@@ -7,7 +7,8 @@ const StyledCard = styled.div`
 	background: ${({ theme }) => theme.cardBackground};
 	padding: 2.4rem;
 	border-radius: 4px;
-	margin-bottom: 2.4rem;
+	max-width: 40rem;
+	margin: 0 auto;
 `;
 
 const Row = styled.div`
