@@ -33,9 +33,9 @@ body {
     height: 100vh;
     background: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.textPrimary};
- 
     font-family: 'Inter', sans-serif;
     text-rendering: optimizeSpeed;
+    transition: all 0.25s linear;
   }
 
   ul,

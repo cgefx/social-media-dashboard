@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledDashboard = styled.main`
-	margin: 2.4rem auto;
+	margin: 0 auto;
 	max-width: 120rem;
-	padding: 2.4rem;
+	/* padding: 4rem 0; */
 `;
 
 function Dashboard({ children }) {

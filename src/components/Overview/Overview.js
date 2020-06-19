@@ -3,6 +3,11 @@ import styled from 'styled-components';
 import OverviewCard from '../OverviewCard/OverviewCard';
 import overviewData from '../../api/overviewData';
 
+const StyledContainer = styled.section`
+	/* padding: 0 2.4rem; */
+	margin: 0 2.4rem;
+`;
+
 const StyledGrid = styled.ul`
 	display: grid;
 	grid-template-columns: repeat(
@@ -32,10 +37,10 @@ const overviewList = overviewData.map((item) => (
 
 function Overview() {
 	return (
-		<>
+		<StyledContainer>
 			<Heading>Overview - Today</Heading>
 			<StyledGrid>{overviewList}</StyledGrid>
-		</>
+		</StyledContainer>
 	);
 }
 

@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
 import Overview from './components/Overview/Overview';
 import Dashboard from './components/Dashboard/Dashboard';
-import Header from './components/Header/Header';
+import AppBar from './components/AppBar/AppBar';
 import FollowGrid from './components/FollowGrid/FollowGrid';
 
 function App() {
+	const [theme, setTheme] = useState('dark');
+
+	const toggleTheme = () => {
+		theme === 'light' ? setTheme('dark') : setTheme('light');
+	};
+
 	return (
-		<ThemeProvider theme={darkTheme}>
+		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 			<>
 				<GlobalStyles />
 				<Dashboard>
-					<Header />
+					<AppBar theme={theme} toggleTheme={toggleTheme} />
 					<FollowGrid />
 					<Overview />
 				</Dashboard>

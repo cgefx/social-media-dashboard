@@ -13,5 +13,5 @@ export const darkTheme = {
 	cardBackground: 'hsl(228, 28%, 20%)',
 	textPrimary: 'hsl(0, 0%, 100%)',
 	textSecondary: 'hsl(228, 34%, 66%)',
-	toggle: 'linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)',
+	toggle: 'linear-gradient(to right,hsl(210,78%,56%), hsl(146,68%,55%))',
 };
