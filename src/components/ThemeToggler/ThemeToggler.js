@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Row = styled.div`
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-top: 1.6rem;
 `;
 
@@ -12,6 +13,11 @@ const Text = styled.p`
 	color: ${({ theme }) => theme.textSecondary};
 	font-weight: 700;
 	text-transform: capitalize;
+	margin-right: 1rem;
+
+	:hover {
+		color: ${({ theme }) => theme.textPrimary};
+	}
 `;
 
 const ToggleContainer = styled.button`
@@ -42,7 +48,7 @@ const ToggleSwitch = styled.div`
 
 const ThemeToggler = ({ theme, toggleTheme }) => {
 	const isLight = theme === 'light';
-	console.log(isLight);
+
 	return (
 		<Row>
 			<Text>{theme} Mode</Text>

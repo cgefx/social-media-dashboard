@@ -7,24 +7,38 @@ const Background = styled.div`
 	width: 100%;
 	border-bottom-left-radius: 2.5rem;
 	border-bottom-right-radius: 2.5rem;
-	height: 40vh;
+	height: 26rem;
+	margin-bottom: -10rem;
+
+	@media (min-width: 900px) {
+		margin-bottom: -15rem;
+	}
 `;
 
 const StyledContainer = styled.div`
 	background: ${({ theme }) => theme.backgroundTop};
-	padding: 4rem 2.4rem;
+	padding: 4rem 2.4rem 0 2.4rem;
 	margin: 0 auto;
 	max-width: 120rem;
 	display: flex;
 	flex-direction: column;
 	border-bottom-left-radius: 2.5rem;
 	border-bottom-right-radius: 2.5rem;
+
+	@media (min-width: 900px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 `;
 
 const Column = styled.div``;
 const Heading = styled.h1`
 	font-size: 2.2rem;
 	margin-bottom: 1rem;
+
+	@media (min-width: 900px) {
+		font-size: 3.2rem;
+	}
 `;
 
 const Subheading = styled.p`
@@ -37,6 +51,10 @@ const Subheading = styled.p`
 const StyledLine = styled.hr`
 	border: 0;
 	border-top: 1px solid ${({ theme }) => theme.textSecondary};
+	@media (min-width: 900px) {
+		display: none;
+		opacity: 0;
+	}
 `;
 
 const AppBar = ({ theme, toggleTheme }) => {

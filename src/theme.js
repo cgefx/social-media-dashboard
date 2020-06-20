@@ -2,7 +2,7 @@ export const lightTheme = {
 	background: 'hsl(0, 0%, 100%)',
 	backgroundTop: 'hsl(225, 100%, 98%)',
 	cardBackground: 'hsl(227, 47%, 96%)',
-	cardBackgroundHover: 'hsl(227, 47%, 100%)',
+	cardBackgroundHover: 'hsl(227, 47%, 93%)',
 	textPrimary: 'hsl(230, 17%, 14%)',
 	textSecondary: 'hsl(228, 12%, 44%)',
 	toggle: 'hsl(230, 22%, 74%)',
