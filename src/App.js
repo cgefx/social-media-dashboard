@@ -18,8 +18,8 @@ function App() {
 		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 			<>
 				<GlobalStyles />
+				<AppBar theme={theme} toggleTheme={toggleTheme} />
 				<Dashboard>
-					<AppBar theme={theme} toggleTheme={toggleTheme} />
 					<FollowGrid />
 					<Overview />
 				</Dashboard>

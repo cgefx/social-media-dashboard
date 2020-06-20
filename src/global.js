@@ -35,7 +35,7 @@ body {
     color: ${({ theme }) => theme.textPrimary};
     font-family: 'Inter', sans-serif;
     text-rendering: optimizeSpeed;
-    transition: all 0.25s linear;
+    transition: all 0.15s linear;
   }
 
   ul,

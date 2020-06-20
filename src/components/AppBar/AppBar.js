@@ -2,16 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 import ThemeToggler from '../ThemeToggler/ThemeToggler';
 
+const Background = styled.div`
+	background: ${({ theme }) => theme.backgroundTop};
+	width: 100%;
+	border-bottom-left-radius: 2.5rem;
+	border-bottom-right-radius: 2.5rem;
+	height: 40vh;
+`;
+
 const StyledContainer = styled.div`
 	background: ${({ theme }) => theme.backgroundTop};
 	padding: 4rem 2.4rem;
-	border-bottom-left-radius: 2.5rem;
-	border-bottom-right-radius: 2.5rem;
-`;
-
-const FlexContainer = styled.div`
+	margin: 0 auto;
+	max-width: 120rem;
 	display: flex;
 	flex-direction: column;
+	border-bottom-left-radius: 2.5rem;
+	border-bottom-right-radius: 2.5rem;
 `;
 
 const Column = styled.div``;
@@ -34,8 +41,8 @@ const StyledLine = styled.hr`
 
 const AppBar = ({ theme, toggleTheme }) => {
 	return (
-		<StyledContainer>
-			<FlexContainer>
+		<Background>
+			<StyledContainer>
 				<Column>
 					<Heading>Social Media Dashboard</Heading>
 					<Subheading>Total Followers: 23,004</Subheading>
@@ -44,8 +51,8 @@ const AppBar = ({ theme, toggleTheme }) => {
 				<Column>
 					<ThemeToggler theme={theme} toggleTheme={toggleTheme} />
 				</Column>
-			</FlexContainer>
-		</StyledContainer>
+			</StyledContainer>
+		</Background>
 	);
 };
 

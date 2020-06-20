@@ -4,8 +4,8 @@ import OverviewCard from '../OverviewCard/OverviewCard';
 import overviewData from '../../api/overviewData';
 
 const StyledContainer = styled.section`
-	/* padding: 0 2.4rem; */
-	margin: 0 2.4rem;
+	margin: 0 auto;
+	padding: 0 2.4rem 4.8rem 2.4rem;
 `;
 
 const StyledGrid = styled.ul`

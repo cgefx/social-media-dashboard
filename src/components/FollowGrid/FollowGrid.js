@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import followData from '../../api/followData';
 
 const StyledContainer = styled.section`
-	margin: 4.8rem 2.4rem;
+	margin: 0 auto;
+	padding: 4.8rem 2.4rem;
 `;
 
 const StyledGrid = styled.ul`
@@ -13,7 +14,7 @@ const StyledGrid = styled.ul`
 		auto-fill,
 		minmax(var(--auto-grid-min-size), 1fr)
 	);
-	grid-gap: 1.6rem;
+	grid-gap: 2.4rem;
 `;
 
 const followList = followData.map((item) => (
