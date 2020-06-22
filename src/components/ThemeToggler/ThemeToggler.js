@@ -27,11 +27,8 @@ const ToggleContainer = styled.button`
 	border-radius: 30px;
 	cursor: pointer;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	overflow: hidden;
-	padding: 0.5rem;
-	position: relative;
+	padding-left: 0.2rem;
 	width: 4.8rem;
 	height: 2.4rem;
 `;
@@ -41,9 +38,11 @@ const ToggleSwitch = styled.div`
 	background: ${({ theme }) => theme.backgroundTop};
 	height: 2rem;
 	width: 2rem;
+	margin: 0;
+	padding: 0;
 	transition: all 0.15s linear;
 	transform: ${({ lightTheme }) =>
-		lightTheme ? `translateX(2rem)` : `translateX(0)`};
+		lightTheme ? `translateX(2.2rem)` : `translateX(0)`};
 `;
 
 const ThemeToggler = ({ theme, toggleTheme }) => {
