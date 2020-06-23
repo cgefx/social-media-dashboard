@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import SocialIcon from '../SocialIcon/SocialIcon';
-import CountIcon from '../CountIcon/CountIcon';
+import UpDownIcon from '../UpDownIcon/UpDownIcon';
 import { formatCount } from '../../utils';
+
+import { Card, Row, Paragraph, SmallText } from '../style';
 
 const BorderWrap = styled.div`
 	background: ${({ color }) => `var(--${color})`};
@@ -13,54 +15,11 @@ const BorderWrap = styled.div`
 	height: 100%;
 `;
 
-const StyledCard = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 100%;
-	padding-top: 2.8rem;
-	border-radius: 4px;
-	background: ${({ theme }) => theme.cardBackground};
-
-	:hover {
-		background: ${({ theme }) => theme.cardBackgroundHover};
-		cursor: pointer;
-	}
-`;
-
-const Row = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-`;
-
 const FollowCount = styled.h1`
 	font-size: 5.6rem;
 	font-weight: bold;
 	text-align: center;
 	margin-top: 2.4rem;
-`;
-
-const UserHandle = styled.p`
-	font-size: 1.2rem;
-	font-weight: bold;
-	margin-left: 1rem;
-	color: ${({ theme }) => theme.textSecondary};
-`;
-
-const ChangeText = styled.small`
-	font-size: 1.2rem;
-	color: ${({ color }) =>
-		color === 'up' ? `var(--limegreen)` : `var(--brightred)`};
-	margin-left: 0.5rem;
-`;
-
-const ChangeContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 2.4rem 0;
 `;
 
 const SubTitle = styled.h3`
@@ -76,18 +35,20 @@ const SubTitle = styled.h3`
 const FollowCard = ({ username, metric, platform, count, change, trend }) => {
 	return (
 		<BorderWrap color={platform}>
-			<StyledCard>
-				<Row>
+			<Card>
+				<Row centered>
 					<SocialIcon platform={platform} />
-					<UserHandle>{username}</UserHandle>
+					<Paragraph small style={{ marginLeft: '.5rem' }}>
+						{username}
+					</Paragraph>
 				</Row>
 				<FollowCount>{formatCount(count)}</FollowCount>
 				<SubTitle>{metric}</SubTitle>
-				<ChangeContainer>
-					<CountIcon direction={trend} />
-					<ChangeText color={trend}>{change} Today</ChangeText>
-				</ChangeContainer>
-			</StyledCard>
+				<Row centered>
+					<UpDownIcon direction={trend} />
+					<SmallText color={trend}>{change} Today</SmallText>
+				</Row>
+			</Card>
 		</BorderWrap>
 	);
 };

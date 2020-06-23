@@ -1,25 +1,17 @@
 import React from 'react';
 import FollowCard from '../FollowCard/FollowCard';
 import styled from 'styled-components';
+import { Grid } from '../style';
 
 const StyledContainer = styled.section`
 	margin: 0 auto;
 	padding: 4.8rem 2.4rem;
 `;
 
-const StyledGrid = styled.ul`
-	display: grid;
-	grid-template-columns: repeat(
-		auto-fill,
-		minmax(var(--auto-grid-min-size), 1fr)
-	);
-	grid-gap: 2.4rem;
-`;
-
 const FollowGrid = ({ data }) => {
 	return (
 		<StyledContainer>
-			<StyledGrid>
+			<Grid large>
 				{data.map((item) => (
 					<li key={item.id}>
 						<FollowCard
@@ -32,7 +24,7 @@ const FollowGrid = ({ data }) => {
 						/>
 					</li>
 				))}
-			</StyledGrid>
+			</Grid>
 		</StyledContainer>
 	);
 };

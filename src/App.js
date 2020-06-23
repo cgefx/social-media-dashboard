@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './style/theme';
 import { GlobalStyles } from './style/global';
-import Overview from './components/Overview/Overview';
 import Dashboard from './components/Dashboard/Dashboard';
 import AppBar from './components/AppBar/AppBar';
-import FollowGrid from './components/FollowGrid/FollowGrid';
 import useData from './hooks/useData';
 
 function App() {
@@ -25,10 +23,7 @@ function App() {
 					toggleTheme={toggleTheme}
 					total={totalFollowers}
 				/>
-				<Dashboard>
-					<FollowGrid data={followerData} />
-					<Overview data={overviewData} />
-				</Dashboard>
+				<Dashboard followers={followerData} overview={overviewData} />
 			</>
 		</ThemeProvider>
 	);

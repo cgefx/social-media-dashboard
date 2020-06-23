@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ThemeToggler from '../ThemeToggler/ThemeToggler';
+import { Paragraph, Heading, StyledLine } from '../style';
 
 const Background = styled.div`
 	background: ${({ theme }) => theme.backgroundTop};
@@ -28,32 +29,7 @@ const StyledContainer = styled.div`
 	@media (min-width: 900px) {
 		flex-direction: row;
 		justify-content: space-between;
-	}
-`;
-
-const Column = styled.div``;
-const Heading = styled.h1`
-	font-size: 2.2rem;
-	margin-bottom: 1rem;
-
-	@media (min-width: 900px) {
-		font-size: 3.2rem;
-	}
-`;
-
-const Subheading = styled.p`
-	font-size: 1.4rem;
-	color: ${({ theme }) => theme.textSecondary};
-	font-weight: 700;
-	margin-bottom: 2.4rem;
-`;
-
-const StyledLine = styled.hr`
-	border: 0;
-	border-top: 1px solid ${({ theme }) => theme.textSecondary};
-	@media (min-width: 900px) {
-		display: none;
-		opacity: 0;
+		align-items: center;
 	}
 `;
 
@@ -61,14 +37,14 @@ const AppBar = ({ theme, toggleTheme, total }) => {
 	return (
 		<Background>
 			<StyledContainer>
-				<Column>
+				<div>
 					<Heading>Social Media Dashboard</Heading>
-					<Subheading>Total Followers: {total}</Subheading>
+					<Paragraph>Total Followers: {total}</Paragraph>
 					<StyledLine />
-				</Column>
-				<Column>
+				</div>
+				<div>
 					<ThemeToggler theme={theme} toggleTheme={toggleTheme} />
-				</Column>
+				</div>
 			</StyledContainer>
 		</Background>
 	);

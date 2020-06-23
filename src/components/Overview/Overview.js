@@ -2,19 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import OverviewCard from '../OverviewCard/OverviewCard';
 import overviewData from '../../api/overviewData';
+import { Grid } from '../style';
 
 const StyledContainer = styled.section`
 	margin: 0 auto;
 	padding: 0 2.4rem 4.8rem 2.4rem;
-`;
-
-const StyledGrid = styled.ul`
-	display: grid;
-	grid-template-columns: repeat(
-		auto-fill,
-		minmax(var(--auto-grid-min-size), 1fr)
-	);
-	grid-gap: 1.6rem;
 `;
 
 const Heading = styled.h2`
@@ -39,7 +31,7 @@ function Overview() {
 	return (
 		<StyledContainer>
 			<Heading>Overview - Today</Heading>
-			<StyledGrid>{overviewList}</StyledGrid>
+			<Grid>{overviewList}</Grid>
 		</StyledContainer>
 	);
 }

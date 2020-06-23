@@ -2,7 +2,7 @@ export default [
 	{
 		metric: 'Page Views',
 		platform: 'facebook',
-		count: '87',
+		count: 87,
 		change: 3,
 		trend: 'up',
 		id: 0,
@@ -10,7 +10,7 @@ export default [
 	{
 		metric: 'Likes',
 		platform: 'facebook',
-		count: '52',
+		count: 52,
 		change: -2,
 		trend: 'down',
 		id: 1,
@@ -18,7 +18,7 @@ export default [
 	{
 		metric: 'Likes',
 		platform: 'instagram',
-		count: '5462',
+		count: 5462,
 		change: 2257,
 		trend: 'up',
 		id: 2,
@@ -26,7 +26,7 @@ export default [
 	{
 		metric: 'Profile Views',
 		platform: 'instagram',
-		count: '52k',
+		count: 52300,
 		change: 1375,
 		trend: 'up',
 		id: 3,
@@ -34,7 +34,7 @@ export default [
 	{
 		metric: 'Retweets',
 		platform: 'twitter',
-		count: '117',
+		count: 117,
 		change: 303,
 		trend: 'up',
 		id: 4,
@@ -42,7 +42,7 @@ export default [
 	{
 		metric: 'Likes',
 		platform: 'twitter',
-		count: '507',
+		count: 507,
 		change: 553,
 		trend: 'up',
 		id: 5,
@@ -50,7 +50,7 @@ export default [
 	{
 		metric: 'Likes',
 		platform: 'youtube',
-		count: '107',
+		count: 107,
 		change: 19,
 		trend: 'down',
 		id: 6,
@@ -58,7 +58,7 @@ export default [
 	{
 		metric: 'Total Views',
 		platform: 'youtube',
-		count: '507',
+		count: 507,
 		change: 12,
 		trend: 'down',
 		id: 7,
