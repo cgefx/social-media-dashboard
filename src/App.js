@@ -6,9 +6,11 @@ import Overview from './components/Overview/Overview';
 import Dashboard from './components/Dashboard/Dashboard';
 import AppBar from './components/AppBar/AppBar';
 import FollowGrid from './components/FollowGrid/FollowGrid';
+import useData from './hooks/useData';
 
 function App() {
 	const [theme, setTheme] = useState('dark');
+	const { overviewData, followerData, totalFollowers } = useData();
 
 	const toggleTheme = () => {
 		theme === 'light' ? setTheme('dark') : setTheme('light');
@@ -18,10 +20,14 @@ function App() {
 		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 			<>
 				<GlobalStyles />
-				<AppBar theme={theme} toggleTheme={toggleTheme} />
+				<AppBar
+					theme={theme}
+					toggleTheme={toggleTheme}
+					total={totalFollowers}
+				/>
 				<Dashboard>
-					<FollowGrid />
-					<Overview />
+					<FollowGrid data={followerData} />
+					<Overview data={overviewData} />
 				</Dashboard>
 			</>
 		</ThemeProvider>

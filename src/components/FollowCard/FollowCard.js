@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SocialIcon from '../SocialIcon/SocialIcon';
 import CountIcon from '../CountIcon/CountIcon';
+import { formatCount } from '../../utils';
 
 const BorderWrap = styled.div`
 	background: ${({ color }) => `var(--${color})`};
@@ -80,7 +81,7 @@ const FollowCard = ({ username, metric, platform, count, change, trend }) => {
 					<SocialIcon platform={platform} />
 					<UserHandle>{username}</UserHandle>
 				</Row>
-				<FollowCount>{count}</FollowCount>
+				<FollowCount>{formatCount(count)}</FollowCount>
 				<SubTitle>{metric}</SubTitle>
 				<ChangeContainer>
 					<CountIcon direction={trend} />

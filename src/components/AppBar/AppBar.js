@@ -57,13 +57,13 @@ const StyledLine = styled.hr`
 	}
 `;
 
-const AppBar = ({ theme, toggleTheme }) => {
+const AppBar = ({ theme, toggleTheme, total }) => {
 	return (
 		<Background>
 			<StyledContainer>
 				<Column>
 					<Heading>Social Media Dashboard</Heading>
-					<Subheading>Total Followers: 23,004</Subheading>
+					<Subheading>Total Followers: {total}</Subheading>
 					<StyledLine />
 				</Column>
 				<Column>

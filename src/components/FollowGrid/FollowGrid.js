@@ -1,7 +1,6 @@
 import React from 'react';
 import FollowCard from '../FollowCard/FollowCard';
 import styled from 'styled-components';
-import followData from '../../api/followData';
 
 const StyledContainer = styled.section`
 	margin: 0 auto;
@@ -17,23 +16,23 @@ const StyledGrid = styled.ul`
 	grid-gap: 2.4rem;
 `;
 
-const followList = followData.map((item) => (
-	<li key={item.id}>
-		<FollowCard
-			username={item.username}
-			metric={item.metric}
-			platform={item.platform}
-			count={item.count}
-			change={item.change}
-			trend={item.trend}
-		/>
-	</li>
-));
-
-const FollowGrid = () => {
+const FollowGrid = ({ data }) => {
 	return (
 		<StyledContainer>
-			<StyledGrid>{followList}</StyledGrid>
+			<StyledGrid>
+				{data.map((item) => (
+					<li key={item.id}>
+						<FollowCard
+							username={item.username}
+							metric={item.metric}
+							platform={item.platform}
+							count={item.count}
+							change={item.change}
+							trend={item.trend}
+						/>
+					</li>
+				))}
+			</StyledGrid>
 		</StyledContainer>
 	);
 };

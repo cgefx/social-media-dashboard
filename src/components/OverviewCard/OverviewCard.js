@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SocialIcon from '../SocialIcon/SocialIcon';
 import CountIcon from '../CountIcon/CountIcon';
+import { formatCount } from '../../utils';
 
 const StyledCard = styled.div`
 	background: ${({ theme }) => theme.cardBackground};
