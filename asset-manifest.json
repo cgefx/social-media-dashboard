@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/social-media-dashboard/static/js/main.ecc85c4b.chunk.js",
-    "main.js.map": "/social-media-dashboard/static/js/main.ecc85c4b.chunk.js.map",
-    "runtime-main.js": "/social-media-dashboard/static/js/runtime-main.bb0a2bfe.js",
-    "runtime-main.js.map": "/social-media-dashboard/static/js/runtime-main.bb0a2bfe.js.map",
-    "static/js/2.0ad7e3b6.chunk.js": "/social-media-dashboard/static/js/2.0ad7e3b6.chunk.js",
-    "static/js/2.0ad7e3b6.chunk.js.map": "/social-media-dashboard/static/js/2.0ad7e3b6.chunk.js.map",
+    "main.js": "/social-media-dashboard/static/js/main.5c9dddff.chunk.js",
+    "main.js.map": "/social-media-dashboard/static/js/main.5c9dddff.chunk.js.map",
+    "runtime-main.js": "/social-media-dashboard/static/js/runtime-main.b794e3f2.js",
+    "runtime-main.js.map": "/social-media-dashboard/static/js/runtime-main.b794e3f2.js.map",
+    "static/js/2.d3939b19.chunk.js": "/social-media-dashboard/static/js/2.d3939b19.chunk.js",
+    "static/js/2.d3939b19.chunk.js.map": "/social-media-dashboard/static/js/2.d3939b19.chunk.js.map",
     "index.html": "/social-media-dashboard/index.html",
-    "precache-manifest.18051d5e5c9246f547f5c4a740d15801.js": "/social-media-dashboard/precache-manifest.18051d5e5c9246f547f5c4a740d15801.js",
+    "precache-manifest.e51dbb76fe07aee2436e4fec0db565a0.js": "/social-media-dashboard/precache-manifest.e51dbb76fe07aee2436e4fec0db565a0.js",
     "service-worker.js": "/social-media-dashboard/service-worker.js",
-    "static/js/2.0ad7e3b6.chunk.js.LICENSE.txt": "/social-media-dashboard/static/js/2.0ad7e3b6.chunk.js.LICENSE.txt",
+    "static/js/2.d3939b19.chunk.js.LICENSE.txt": "/social-media-dashboard/static/js/2.d3939b19.chunk.js.LICENSE.txt",
     "static/media/icon-down.69a5c77f.svg": "/social-media-dashboard/static/media/icon-down.69a5c77f.svg",
     "static/media/icon-facebook.a7383764.svg": "/social-media-dashboard/static/media/icon-facebook.a7383764.svg",
     "static/media/icon-instagram.991487fe.svg": "/social-media-dashboard/static/media/icon-instagram.991487fe.svg",
@@ -18,8 +18,8 @@
     "static/media/icon-youtube.8499da12.svg": "/social-media-dashboard/static/media/icon-youtube.8499da12.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb0a2bfe.js",
-    "static/js/2.0ad7e3b6.chunk.js",
-    "static/js/main.ecc85c4b.chunk.js"
+    "static/js/runtime-main.b794e3f2.js",
+    "static/js/2.d3939b19.chunk.js",
+    "static/js/main.5c9dddff.chunk.js"
   ]
 }
