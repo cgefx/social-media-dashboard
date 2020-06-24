@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FollowersCard, OverviewCard } from '../components';
-import { Grid, Section, HeadingSecondary } from './style';
+import { Grid, Section, Heading } from './style';
 
 const StyledDashboard = styled.main`
 	margin: 0 auto;
@@ -29,7 +29,10 @@ function Dashboard({ followers, overview }) {
 			</Section>
 
 			<Section>
-				<HeadingSecondary>Overview - Today</HeadingSecondary>
+				<Heading medium style={{ marginBottom: '1.6rem' }}>
+					{' '}
+					Overview - Today
+				</Heading>
 				<Grid>
 					{overview.map((item) => (
 						<li key={item.id}>

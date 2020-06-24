@@ -1,19 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles, lightTheme, darkTheme } from './style';
 import { Dashboard, AppBar } from './components';
-import useData from './hooks/useData';
+import { useData, useDarkMode } from './hooks';
 
 function App() {
-	const [theme, setTheme] = useState('dark');
+	const [theme, toggleTheme, componentMounted] = useDarkMode();
 	const { overviewData, followerData, totalFollowers } = useData();
 
-	const toggleTheme = () => {
-		theme === 'light' ? setTheme('dark') : setTheme('light');
-	};
+	const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+	//The default theme is loaded first and then checks local storage.
+	//If a different one is found some flicker can happen.
+	//This check blocks the app from loading until theme checking is done.
+	if (!componentMounted) {
+		return <div />;
+	}
 
 	return (
-		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+		<ThemeProvider theme={themeMode}>
 			<>
 				<GlobalStyles />
 				<AppBar

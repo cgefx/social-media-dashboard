@@ -12,6 +12,7 @@ import {
 import Row from './Row';
 import Section from './Section';
 import StyledLine from './StyledLine';
+import StyledBorder from './StyledBorder';
 
 export {
 	Card,
@@ -24,5 +25,6 @@ export {
 	Section,
 	SmallText,
 	StyledLine,
+	StyledBorder,
 	SubHeading,
 };
