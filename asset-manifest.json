@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/social-media-dashboard/static/js/main.24aed850.chunk.js",
-    "main.js.map": "/social-media-dashboard/static/js/main.24aed850.chunk.js.map",
+    "main.js": "/social-media-dashboard/static/js/main.07cada7d.chunk.js",
+    "main.js.map": "/social-media-dashboard/static/js/main.07cada7d.chunk.js.map",
     "runtime-main.js": "/social-media-dashboard/static/js/runtime-main.b794e3f2.js",
     "runtime-main.js.map": "/social-media-dashboard/static/js/runtime-main.b794e3f2.js.map",
     "static/js/2.d3939b19.chunk.js": "/social-media-dashboard/static/js/2.d3939b19.chunk.js",
     "static/js/2.d3939b19.chunk.js.map": "/social-media-dashboard/static/js/2.d3939b19.chunk.js.map",
     "index.html": "/social-media-dashboard/index.html",
-    "precache-manifest.37f7b23335b5d7b0eb5a6aa317f31803.js": "/social-media-dashboard/precache-manifest.37f7b23335b5d7b0eb5a6aa317f31803.js",
+    "precache-manifest.d3dd209971dacb113e3e60e0e2eb6ee7.js": "/social-media-dashboard/precache-manifest.d3dd209971dacb113e3e60e0e2eb6ee7.js",
     "service-worker.js": "/social-media-dashboard/service-worker.js",
     "static/js/2.d3939b19.chunk.js.LICENSE.txt": "/social-media-dashboard/static/js/2.d3939b19.chunk.js.LICENSE.txt",
     "static/media/icon-down.69a5c77f.svg": "/social-media-dashboard/static/media/icon-down.69a5c77f.svg",
@@ -20,6 +20,6 @@
   "entrypoints": [
     "static/js/runtime-main.b794e3f2.js",
     "static/js/2.d3939b19.chunk.js",
-    "static/js/main.24aed850.chunk.js"
+    "static/js/main.07cada7d.chunk.js"
   ]
 }
