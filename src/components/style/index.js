@@ -1,14 +1,17 @@
 import Card from './Card';
 import FlexBox from './FlexBox';
 import Grid from './Grid';
-import Heading from './Heading';
-import HeadingSecondary from './HeadingSecondary';
-import Paragraph from './Paragraph';
+import {
+	Heading,
+	HeadingSecondary,
+	Paragraph,
+	SmallText,
+	SubHeading,
+} from './Typography';
+
 import Row from './Row';
 import Section from './Section';
-import SmallText from './SmallText';
 import StyledLine from './StyledLine';
-import SubHeading from './SubHeading';
 
 export {
 	Card,

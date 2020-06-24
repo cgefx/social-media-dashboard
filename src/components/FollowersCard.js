@@ -23,7 +23,9 @@ function FollowersCard({ username, metric, platform, count, change, trend }) {
 						{username}
 					</Paragraph>
 				</Row>
-				<Heading centered>{formatCount(count)}</Heading>
+				<Heading centered large>
+					{formatCount(count)}
+				</Heading>
 				<SubHeading>{metric}</SubHeading>
 				<Row centered>
 					<UpDownIcon direction={trend} />

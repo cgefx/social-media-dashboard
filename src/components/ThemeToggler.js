@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Row, Paragraph } from './style';
 
+const style = {
+	padding: `1.6rem 0`,
+};
+
 const ToggleContainer = styled.button`
 	background: ${({ theme }) => theme.gradient};
 	border: none;
@@ -30,7 +34,7 @@ function ThemeToggler({ theme, toggleTheme }) {
 	const isLight = theme === 'light';
 
 	return (
-		<Row>
+		<Row style={style}>
 			<Paragraph>{theme} Mode</Paragraph>
 			<ToggleContainer onClick={toggleTheme}>
 				<ToggleSwitch lightTheme={isLight} />
