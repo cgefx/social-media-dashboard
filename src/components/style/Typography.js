@@ -2,18 +2,17 @@ import styled from 'styled-components';
 
 export const Heading = styled.h1`
 	font-size: ${({ large }) => (large ? '5.6rem' : '2.2rem')};
-	margin-bottom: 0.8rem;
 	font-weight: 700;
+	margin-bottom: 0.8rem;
 	text-align: ${({ centered }) => (centered ? 'center' : 'initial')};
 	@media (min-width: 900px) {
-		font-size: ${({ large }) => (large ? '5.6rem' : '3.2rem')};
+		font-size: ${({ medium }) => (medium ? '2.2rem' : '3.2rem')};
 	}
 `;
 
 export const HeadingSecondary = styled.h2`
 	font-size: 2.2rem;
 	font-weight: 700;
-	margin-bottom: 1rem;
 `;
 
 export const Paragraph = styled.p`
@@ -30,7 +29,6 @@ export const SubHeading = styled.h3`
 	font-weight: 400;
 	letter-spacing: 0.4rem;
 	text-align: center;
-	/* margin-top: 0.5rem; */
 	margin-bottom: 1rem;
 `;
 

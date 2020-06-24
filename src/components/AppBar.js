@@ -6,13 +6,13 @@ import { Paragraph, Heading, StyledLine, Section, FlexBox } from './style';
 const Background = styled.div`
 	background: ${({ theme }) => theme.backgroundTop};
 	width: 100%;
-	height: 26rem;
+	height: 24rem;
 	margin-bottom: -10rem;
 	border-bottom-left-radius: 2.5rem;
 	border-bottom-right-radius: 2.5rem;
 
 	@media (min-width: 900px) {
-		margin-bottom: -15rem;
+		margin-bottom: -12rem;
 	}
 `;
 

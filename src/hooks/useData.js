@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import followers from '../api/followData';
 import overview from '../api/overviewData';
 
-function useData() {
+export const useData = () => {
 	const [overviewData, setOverviewData] = useState([]);
 	const [followerData, setFollowerData] = useState([]);
 	const [totalFollowers, setTotalFollowers] = useState(null);
@@ -21,6 +21,4 @@ function useData() {
 	}, [followerData]);
 
 	return { overviewData, followerData, totalFollowers };
-}
-
-export default useData;
+};

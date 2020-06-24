@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --instagram: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --youtube: hsl(348, 97%, 39%);
     --auto-grid-min-size: 27rem;
+    --shadow-hover: 0 8px 20px -15px rgba(0, 0, 0, 0.2);
   }
 
   *,
@@ -34,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.textPrimary};
     font-family: 'Inter', sans-serif;
     text-rendering: optimizeSpeed;
-    transition: all 0.15s linear;
+    transition: all 0.2s linear;
   }
 
   ul,
