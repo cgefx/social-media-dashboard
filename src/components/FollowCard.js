@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import SocialIcon from '../SocialIcon/SocialIcon';
-import UpDownIcon from '../UpDownIcon/UpDownIcon';
-import { formatCount } from '../../utils';
-
-import { Card, Row, Paragraph, SmallText } from '../style';
+import { SocialIcon, UpDownIcon } from '../components';
+import { Card, Row, Paragraph, SmallText, SubHeading } from './style';
+import { formatCount } from '../utils';
 
 const BorderWrap = styled.div`
 	background: ${({ color }) => `var(--${color})`};
@@ -22,16 +20,6 @@ const FollowCount = styled.h1`
 	margin-top: 2.4rem;
 `;
 
-const SubTitle = styled.h3`
-	text-transform: uppercase;
-	font-size: 1.4rem;
-	color: ${({ theme }) => theme.textSecondary};
-	font-weight: 400;
-	letter-spacing: 0.4rem;
-	text-align: center;
-	margin-top: 0.5rem;
-`;
-
 const FollowCard = ({ username, metric, platform, count, change, trend }) => {
 	return (
 		<BorderWrap color={platform}>
@@ -43,7 +31,7 @@ const FollowCard = ({ username, metric, platform, count, change, trend }) => {
 					</Paragraph>
 				</Row>
 				<FollowCount>{formatCount(count)}</FollowCount>
-				<SubTitle>{metric}</SubTitle>
+				<SubHeading>{metric}</SubHeading>
 				<Row centered>
 					<UpDownIcon direction={trend} />
 					<SmallText color={trend}>{change} Today</SmallText>

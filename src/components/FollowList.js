@@ -1,16 +1,10 @@
 import React from 'react';
-import FollowCard from '../FollowCard/FollowCard';
-import styled from 'styled-components';
-import { Grid } from '../style';
+import { FollowCard } from '../components';
+import { Grid, Section } from './style';
 
-const StyledContainer = styled.section`
-	margin: 0 auto;
-	padding: 4.8rem 2.4rem;
-`;
-
-const FollowGrid = ({ data }) => {
+const FollowList = ({ data }) => {
 	return (
-		<StyledContainer>
+		<Section>
 			<Grid large>
 				{data.map((item) => (
 					<li key={item.id}>
@@ -25,8 +19,8 @@ const FollowGrid = ({ data }) => {
 					</li>
 				))}
 			</Grid>
-		</StyledContainer>
+		</Section>
 	);
 };
 
-export default FollowGrid;
+export default FollowList;

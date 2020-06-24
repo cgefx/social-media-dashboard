@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import ThemeToggler from '../ThemeToggler/ThemeToggler';
-import { Paragraph, Heading, StyledLine } from '../style';
+import { ThemeToggler } from '../components';
+import { Paragraph, Heading, StyledLine } from './style';
 
 const Background = styled.div`
 	background: ${({ theme }) => theme.backgroundTop};

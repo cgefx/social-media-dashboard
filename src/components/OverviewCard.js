@@ -1,15 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-import SocialIcon from '../SocialIcon/SocialIcon';
-import UpDownIcon from '../UpDownIcon/UpDownIcon';
-import { formatCount } from '../../utils';
-
-import { Card, Row, Paragraph, SmallText } from '../style';
-
-const ViewCount = styled.h2`
-	font-size: 3.2rem;
-	font-weight: bold;
-`;
+import { formatCount } from '../utils';
+import { SocialIcon, UpDownIcon } from '../components';
+import { Card, Row, Paragraph, SmallText, HeadingSecondary } from './style';
 
 const OverviewCard = ({ metric, platform, count, change, trend }) => {
 	return (
@@ -19,7 +11,7 @@ const OverviewCard = ({ metric, platform, count, change, trend }) => {
 				<SocialIcon platform={platform} />
 			</Row>
 			<Row>
-				<ViewCount>{formatCount(count)}</ViewCount>
+				<HeadingSecondary>{formatCount(count)}</HeadingSecondary>
 				<Row centered>
 					<UpDownIcon direction={trend} />
 					<SmallText color={trend}>{change}%</SmallText>

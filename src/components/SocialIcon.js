@@ -1,8 +1,8 @@
 import React from 'react';
-import { ReactComponent as FacebookIcon } from '../../images/icon-facebook.svg';
-import { ReactComponent as InstagramIcon } from '../../images/icon-instagram.svg';
-import { ReactComponent as TwitterIcon } from '../../images/icon-twitter.svg';
-import { ReactComponent as YoutubeIcon } from '../../images/icon-youtube.svg';
+import { ReactComponent as FacebookIcon } from '../images/icon-facebook.svg';
+import { ReactComponent as InstagramIcon } from '../images/icon-instagram.svg';
+import { ReactComponent as TwitterIcon } from '../images/icon-twitter.svg';
+import { ReactComponent as YoutubeIcon } from '../images/icon-youtube.svg';
 
 const SocialIcon = (props) => {
 	switch (props.platform) {

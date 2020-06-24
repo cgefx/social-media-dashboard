@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './style/theme';
 import { GlobalStyles } from './style/global';
-import Dashboard from './components/Dashboard/Dashboard';
-import AppBar from './components/AppBar/AppBar';
+import { Dashboard, AppBar } from './components';
 import useData from './hooks/useData';
 
 function App() {
