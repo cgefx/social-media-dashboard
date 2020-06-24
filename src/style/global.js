@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.textPrimary};
     font-family: 'Inter', sans-serif;
     text-rendering: optimizeSpeed;
-    transition: all 0.2s linear;
+    transition: color 0.15s ease;
   }
 
   ul,
