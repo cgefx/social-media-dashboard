@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   :root {
     --limegreen: hsl(163, 72%, 41%);
     --brightred: hsl(356, 69%, 56%);
@@ -17,15 +17,14 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  *,
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
+    *,
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
   html {
-	//100% = 16px
 	font-size: 62.5%; // 1rem = 10px
   }
 
@@ -48,13 +47,11 @@ body {
     display: block;
   }
 
-  ${'' /* svg {
-    fill: currentColor;
-  } */}
-
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.textPrimary};
     display: inline-block;
   }
 `;
+
+export default GlobalStyles;
