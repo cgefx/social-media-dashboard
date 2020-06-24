@@ -1,4 +1,5 @@
 import Card from './Card';
+import FlexBox from './FlexBox';
 import Grid from './Grid';
 import Heading from './Heading';
 import HeadingSecondary from './HeadingSecondary';
@@ -11,6 +12,7 @@ import SubHeading from './SubHeading';
 
 export {
 	Card,
+	FlexBox,
 	Grid,
 	Heading,
 	HeadingSecondary,

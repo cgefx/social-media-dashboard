@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FollowCard, OverviewCard } from '../components';
+import { FollowersCard, OverviewCard } from '../components';
 import { Grid, Section, HeadingSecondary } from './style';
 
 const StyledDashboard = styled.main`
@@ -15,7 +15,7 @@ function Dashboard({ followers, overview }) {
 				<Grid large>
 					{followers.map((item) => (
 						<li key={item.id}>
-							<FollowCard
+							<FollowersCard
 								username={item.username}
 								metric={item.metric}
 								platform={item.platform}

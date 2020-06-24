@@ -1,61 +1,42 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const Row = styled.div`
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 1.6rem;
-`;
-
-const Text = styled.p`
-	font-size: 1.4rem;
-	color: ${({ theme }) => theme.textSecondary};
-	font-weight: 700;
-	text-transform: capitalize;
-	margin-right: 1rem;
-
-	:hover {
-		color: ${({ theme }) => theme.textPrimary};
-	}
-`;
+import { Row, Paragraph } from './style';
 
 const ToggleContainer = styled.button`
-	background: ${({ theme }) => theme.toggle};
+	background: ${({ theme }) => theme.gradient};
 	border: none;
 	outline: 0;
 	border-radius: 30px;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
-	padding-left: 0.2rem;
+	padding: 0 0.3rem;
+	margin-left: 1rem;
 	width: 4.8rem;
 	height: 2.4rem;
 `;
 
 const ToggleSwitch = styled.div`
-	border-radius: 50%;
 	background: ${({ theme }) => theme.backgroundTop};
 	height: 2rem;
 	width: 2rem;
-	margin: 0;
-	padding: 0;
+	border-radius: 50%;
 	transition: all 0.15s linear;
 	transform: ${({ lightTheme }) =>
-		lightTheme ? `translateX(2.2rem)` : `translateX(0)`};
+		lightTheme ? `translateX(2rem)` : `translateX(0)`};
 `;
 
-const ThemeToggler = ({ theme, toggleTheme }) => {
+function ThemeToggler({ theme, toggleTheme }) {
 	const isLight = theme === 'light';
 
 	return (
 		<Row>
-			<Text>{theme} Mode</Text>
+			<Paragraph>{theme} Mode</Paragraph>
 			<ToggleContainer onClick={toggleTheme}>
 				<ToggleSwitch lightTheme={isLight} />
 			</ToggleContainer>
 		</Row>
 	);
-};
+}
 
 export default ThemeToggler;

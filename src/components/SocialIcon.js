@@ -4,7 +4,7 @@ import { ReactComponent as InstagramIcon } from '../images/icon-instagram.svg';
 import { ReactComponent as TwitterIcon } from '../images/icon-twitter.svg';
 import { ReactComponent as YoutubeIcon } from '../images/icon-youtube.svg';
 
-const SocialIcon = (props) => {
+function SocialIcon(props) {
 	switch (props.platform) {
 		case 'facebook':
 			return <FacebookIcon {...props} />;
@@ -17,6 +17,6 @@ const SocialIcon = (props) => {
 		default:
 			return <div />;
 	}
-};
+}
 
 export default SocialIcon;

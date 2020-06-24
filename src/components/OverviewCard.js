@@ -1,9 +1,9 @@
 import React from 'react';
-import { formatCount } from '../utils';
 import { SocialIcon, UpDownIcon } from '../components';
 import { Card, Row, Paragraph, SmallText, HeadingSecondary } from './style';
+import { formatCount } from '../utils';
 
-const OverviewCard = ({ metric, platform, count, change, trend }) => {
+function OverviewCard({ metric, platform, count, change, trend }) {
 	return (
 		<Card>
 			<Row>
@@ -19,6 +19,6 @@ const OverviewCard = ({ metric, platform, count, change, trend }) => {
 			</Row>
 		</Card>
 	);
-};
+}
 
 export default OverviewCard;
