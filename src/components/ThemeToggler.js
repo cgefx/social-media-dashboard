@@ -64,7 +64,7 @@ function ThemeToggler({ theme, toggleTheme }) {
 		<Row style={style}>
 			<Paragraph>{theme} Mode</Paragraph>
 			<ToggleContainer
-				className='hvr-shutter-out-horizontal'
+				aria-label='theme toggle'
 				hoverColor={darkTheme}
 				onClick={toggleTheme}
 			>
