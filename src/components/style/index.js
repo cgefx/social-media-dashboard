@@ -1,30 +1,30 @@
-import Card from './Card';
-import FlexBox from './FlexBox';
-import Grid from './Grid';
+import Card from './Card'
+import FlexBox from './FlexBox'
+import Grid from './Grid'
 import {
-	Heading,
-	HeadingSecondary,
-	Paragraph,
-	SmallText,
-	SubHeading,
-} from './Typography';
+  Heading,
+  HeadingSecondary,
+  Paragraph,
+  SmallText,
+  SubHeading,
+} from './Typography'
 
-import Row from './Row';
-import Section from './Section';
-import StyledLine from './StyledLine';
-import StyledBorder from './StyledBorder';
+import Row from './Row'
+import Section from './Section'
+import StyledLine from './StyledLine'
+import StyledBorder from './StyledBorder'
 
 export {
-	Card,
-	FlexBox,
-	Grid,
-	Heading,
-	HeadingSecondary,
-	Paragraph,
-	Row,
-	Section,
-	SmallText,
-	StyledLine,
-	StyledBorder,
-	SubHeading,
-};
+  Card,
+  FlexBox,
+  Grid,
+  Heading,
+  HeadingSecondary,
+  Paragraph,
+  Row,
+  Section,
+  SmallText,
+  StyledLine,
+  StyledBorder,
+  SubHeading,
+}

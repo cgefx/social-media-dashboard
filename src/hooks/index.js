@@ -1,4 +1,4 @@
-import { useDarkMode } from './useDarkMode';
-import { useData } from './useData';
+import { useDarkMode } from './useDarkMode'
+import { useData } from './useData'
 
-export { useDarkMode, useData };
+export { useDarkMode, useData }
